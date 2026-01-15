@@ -1,0 +1,97 @@
+.service_section{
+    padding: 72px 20px;
+    /* background-color: rgb(245, 239, 237); */
+}
+.service_heading{
+max-width: 858px;
+margin: 0 auto;
+text-align: left;
+padding: 0px 18px
+}
+.service_heading p{
+    color: rgb(166, 123, 63);
+font-family: "Inter", system-ui, sans-serif;
+font-size: 7.875px;
+font-weight: 500;
+letter-spacing: 0.7875px;
+line-height: 11.25px;
+text-transform: uppercase;
+}
+.service_heading h2{
+       color: rgb(20, 20, 20);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 9px;
+    margin-top: 4.5px;
+}
+@media (max-width: 576px) {
+  .service_heading {
+    text-align: center;
+  }
+}
+.service_grid{
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+ max-width: 678px; 
+  margin: 20px auto;  
+     gap: 24px;
+    row-gap: 18px;
+    font-family: "Inter", system-ui, sans-serif;
+}
+.service_grid{
+  justify-items: center;
+}
+
+ .service_service{
+    padding: 20px 12px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 15px -3px;
+  line-height: 13.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 260px;   /* fixed card size */
+  background-color: rgb(245, 239, 237);
+ }
+ .text_price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.75px;
+    align-items: flex-start;
+ }
+ .text_price h3{
+    color: rgb(20, 20, 20);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 11.25px;
+    font-weight: 400;
+    line-height: 15.75px;
+ }
+ .text_price span{
+    color: rgb(166, 123, 63);
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 500;
+    line-height: 13.5px;
+ }
+ .service_service p{
+    color: rgb(102, 102, 102);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 7.875px;
+ }
+@media (max-width: 992px) {
+  .service_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .service_grid {
+    grid-template-columns: 1fr;
+  }
+}
+#service_section{
+    background-color: rgb(245, 239, 237);
+}
+#service_id{
+    background-color: #fff;
+}

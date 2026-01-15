@@ -660,6 +660,28 @@ font-family: "Inter", system-ui, sans-serif;
 color: rgba(248, 245, 242, 0.7);
 /* display: block; */
 }
+.certificate_proof_grid{
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+   justify-content: center;
+    align-items: center;
+ max-width: 600px; 
+  margin: 20px auto;  
+     gap: 24px;
+    row-gap: 18px;
+    font-family: "Inter", system-ui, sans-serif;
+}
+.certi_item{
+  padding: 13.5px;
+  text-align: center;
+  border: 1px solid rgba(248, 245, 242, 0.1);
+}
+.certi_item p{
+    font-size: 7.875px;
+  font-family: "Inter", system-ui, sans-serif;
+  /* line-height: 11.25px; */
+  color: rgb(162, 179, 159); 
+}
 @media (max-width: 992px) {
   .grid_link {
     grid-template-columns: repeat(2, 1fr);
@@ -667,10 +689,19 @@ color: rgba(248, 245, 242, 0.7);
   }
 
   .footer_links {
-    max-width: 600px;
+    max-width: 640px;
+  }
+
+  .certificate_proof_grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 420px;
   }
 }
 @media (max-width: 576px) {
+  .footer {
+    padding: 56px 16px;
+  }
+
   .grid_link {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -680,6 +711,8 @@ color: rgba(248, 245, 242, 0.7);
   .logo_div_footer p,
   .general_footer a {
     max-width: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .logo_div_footer .footer_icon {
@@ -689,5 +722,11 @@ color: rgba(248, 245, 242, 0.7);
   li {
     justify-content: center;
   }
+
+  .certificate_proof_grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
 }
+
 
