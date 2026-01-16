@@ -1,0 +1,136 @@
+.form_booking_section{
+    padding: 72px 20px;
+    background-color: #fff;
+}
+.form_booking_div{
+max-width: 858px;
+margin: 0 auto;
+padding: 0px 18px;
+}
+.form_booking_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+}
+.form_request{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.input_text{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.input_text label{
+  display: block;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 7.875px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 6px;
+}
+.input_text input{
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 10.125px;
+  border: 1px solid rgb(230, 224, 220);
+  outline: none;
+  background-color: #fff;
+}
+
+.input_text input:focus{
+  border-color: rgb(166, 123, 63);
+}
+.input_text:has(input[type="search"]),
+.input_text:has(input[type="text"]){
+  grid-template-columns: 1fr;
+}
+.form_request button{
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background-color: rgb(166, 123, 63);
+  color: #fff;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 10.125px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.form_request button:hover{
+  opacity: 0.85;
+}
+.form_policy_inner_div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.policy{
+  border: 1px solid rgb(242, 237, 233);
+  padding: 18px;
+  background-color: rgb(242, 237, 233);
+}
+.policy h3{
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 11.25px;
+  margin: 9px 0;
+  color: rgb(20, 20, 20);
+}
+.policy p{
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 7.875px;
+  line-height: 13.5px;
+  color: rgb(102, 102, 102);
+}
+.policy ul{
+  padding-left: 16px;
+}
+
+.policy li{
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 7.875px;
+  line-height: 13.5px;
+  color: rgb(102, 102, 102);
+  display: block;
+}
+.input_text select{
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 10.125px;
+  border: 1px solid rgb(230, 224, 220);
+  background-color: #fff;
+  color: rgb(102, 102, 102);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+.input_text select:focus{
+  border-color: rgb(166, 123, 63);
+}
+.service_type div{
+  position: relative;
+}
+
+.service_type div::after{
+  content: "▾";
+  position: absolute;
+  right: 12px;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: rgb(166, 123, 63);
+  pointer-events: none;
+}
+
+@media (max-width: 768px){
+  .form_booking_grid{
+    grid-template-columns: 1fr;
+  }
+
+  .input_text{
+    grid-template-columns: 1fr;
+  }
+}

@@ -96,6 +96,9 @@ font-size: 0.875rem;
   .hamburger {
     display: flex;
   }
+  /* .book_btn{
+    display: none;
+  } */
 }
 /* Home Section */
 .hom_sec{

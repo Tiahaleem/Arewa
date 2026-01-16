@@ -1,0 +1,40 @@
+.client_review_section{
+    padding: 72px 20px;
+    background-color: rgb(250, 249, 247);
+}
+.client_review_div{
+    max-width: 858px;
+margin: 0 auto;
+padding: 0px 18px;
+}
+.client_div_txt_grid{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 15px;
+    justify-items: center;
+}
+#Testimonials_id{
+    background-color: rgb(250, 248, 247);
+}
+/* .review_box{
+  width: 260px;
+  aspect-ratio: 1 / 1;
+} */
+
+.line{
+ width: 100%;              
+  height: 2px;              
+  background-color: rgb(230, 224, 220);
+  margin: 10px auto;        
+}
+@media (max-width: 576px) {
+  .client_div_txt_grid{
+    grid-template-columns: 1fr;
+  }
+}
+#icon_grid_footer{
+   background-color: rgb(38, 38, 38);
+}
+#icon_grid_footer p{
+    color: white;
+}
