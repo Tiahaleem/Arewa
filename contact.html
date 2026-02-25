@@ -12,6 +12,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <Title>ArewaArtistry</Title>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "9L9th-xFuyGEfhNeC",
+      });
+   })();
+</script>
+
 </head>
 <body>
      <nav class="Header_section">
@@ -47,29 +58,30 @@
     <div class="contact_div_grid">
        <form class="contact_request" action="https://formspree.io/f/XXXXXXX" method="POST">
 
-  <div class="input_text">
-    <div>
-      <label>Full Name *</label>
-      <input type="text" name="full_name" placeholder="Enter your full name" required>
-    </div>
-
-    <div>
-      <label>Email Address *</label>
-      <input type="email" name="email" placeholder="Enter your email address" required>
-    </div>
-
-    <div>
-      <label>Subject *</label>
-      <input type="text" name="subject" placeholder="What is this about?" required>
-    </div>
-
-    <div>
-      <label>Message *</label>
-      <textarea name="message" placeholder="Your message..." required></textarea>
-    </div>
+<div class="input_text">
+  <div>
+    <label>Full Name *</label>
+    <input type="text" id="name_inp" placeholder="Enter your full name" required>
   </div>
 
-  <button type="submit">Send Message</button>
+  <div>
+    <label>Email Address *</label>
+    <input type="email" id="email_inp" placeholder="Enter your email address" required>
+  </div>
+
+  <div>
+    <label>Subject *</label>
+    <input type="text" id="sub_inp" placeholder="What is this about?" required>
+  </div>
+
+  <div>
+    <label>Message *</label>
+    <textarea id="msg_inp" placeholder="Your message..." required></textarea>
+  </div>
+</div>
+
+<button type="button" onclick="sendMail()">Send Message</button>
+
 
   <input type="hidden" name="_subject" value="New Contact Message">
 </form>
@@ -82,7 +94,7 @@
 
   <div class="info_text">
     <p>Email</p>
-    <a href="mailto:abdulhaleemtiamiyu@gmail.com">abdulhaleemtiamiyu@gmail.com</a>
+    <a href="mailto:abdulhaleemtiamiyu@gmail.com">motunrayomary20@gmail.com</a>
   </div>
 </div>
 
@@ -92,7 +104,8 @@
 
   <div class="info_text">
     <p>Phone</p>
-    <a href="tel:+12345678900">+1 (234) 567-8900</a>
+    <a href="tel:+12345678900"> 
++234 810 868 6000</a>
   </div>
 </div>
 
@@ -102,11 +115,10 @@
                     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(166, 123, 63)" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
                 </div>
                 <div class="map_container">
-  <iframe
-    src="https://www.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15804.438092614277!2d5.1140498832780406!3d7.987624822269891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10481c6987f8413b%3A0xe406cb11edd9670c!2sOtun%20Ekiti%20372103%2C%20Ekiti!5e0!3m2!1sen!2sng!4v1770627077010!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
 </div>
 
             </div>
@@ -153,7 +165,8 @@
     <h4>Contact</h4>
     <ul>
         <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(219, 196, 162)" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg> <a href="#">motunrayomary20@gmail.com</a></li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(219, 196, 162)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg><a href="#">+1 (234) 567-890</a></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(219, 196, 162)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg><a href="#"> 
++234 810 868 6000</a></li>
         <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(219, 196, 162)" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg><p class="la">Shop 6 egbe omo Otun shopping complex. Otun Ekiti Ekiti state</p></li>
     </ul>
      </div>
